@@ -51,8 +51,3 @@ RUN	apk update && \
  
 RUN apk --update add wget curl php7 php7-cli php7-phar
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
-WORKDIR /var/www
-VOLUME ["/var/www"]
-EXPOSE 9000
-
-ENTRYPOINT ["/usr/sbin/php-fpm7"]  
