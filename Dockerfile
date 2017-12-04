@@ -49,5 +49,3 @@ RUN	apk update && \
 	apk del tzdata && \
 	rm -rf /var/cache/apk/*
  
-RUN apk --update add wget curl php7 php7-cli php7-phar
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
